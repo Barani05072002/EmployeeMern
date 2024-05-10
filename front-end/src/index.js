@@ -1,0 +1,20 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './styles/index.css'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <Router>
+        {<Route exact path='http://localhost:5555/api/:user/emps'/>}
+    </Router>
+    <App />
+  </React.StrictMode>
+);
